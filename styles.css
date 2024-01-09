@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-card-wrappper {
+  margin: 150px auto;
+  display: flex;
+  width: 900px;
+  height: 450px;
+}
+
+.car-card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 50px;
+}
+.card-container:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.card-container:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.heading-light-gray {
+  color: hsl(0, 0%, 95%);
+  font-family: Big Shoulders Display;
+}
+
+.car-card-para-content {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: Lexend Deca;
+  max-width: 230px;
+}
+
+.car-learn-more-btn {
+  border-radius: 15px;
+  border: none;
+  padding: 8px 15px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.sedans button {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 768px) {
+  .column-card-wrappper {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .card-container:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+  .card-container:last-child {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
