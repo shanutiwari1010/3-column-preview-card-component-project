@@ -17,7 +17,6 @@ body {
   margin: 150px auto;
   display: flex;
   width: 900px;
-  height: 450px;
 }
 
 .car-card-content-wrapper {
@@ -33,6 +32,7 @@ body {
   align-items: start;
   justify-content: space-between;
   padding: 50px;
+  height: 450px;
 }
 .card-container:first-child {
   border-top-left-radius: 8px;
@@ -89,6 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 375px;
+    margin-bottom: 200px;
   }
   .card-container{
     display: flex;
